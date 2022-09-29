@@ -6,6 +6,8 @@ import Home from "./Screens/Home";
 import Education from "./Screens/Education";
 import Location from "./Screens/Location";
 import About from "./Screens/About";
+import Order from "./Screens/Order";
+import Contact from "./Screens/Contact";
 import GetStarted from "./Screens/GetStarted";
 import { Entypo, FontAwesome } from "@expo/vector-icons";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
@@ -30,12 +32,12 @@ function Tabs() {
         tabBarIcon: () => <Entypo name="home" size={24} color="black" />,
       }}
     />
-    <Tab.Screen
-      name="Search"
+    {/* <Tab.Screen
+      name="Location"
       component={Location}
       options={{
         tabBarIcon: () => (
-          <FontAwesome name="search" size={24} color="black" />
+          <Entypo name="location" size={24} color="black" />
         ),
       }}
     />
@@ -44,10 +46,10 @@ function Tabs() {
       component={Education}
       options={{
         tabBarIcon: () => (
-          <FontAwesome name="newspaper-o" size={24} color="black" />
+          <Entypo name="book" size={24} color="black" />
         ),
       }}
-    />
+    /> */}
 
 <Tab.Screen
       name="About"
@@ -79,7 +81,10 @@ export default function App() {
           component={Tabs}
           options={{ headerShown: false }}
         />
-        {/* <Stack.Screen name="Location" component={Location} /> */}
+        <Stack.Screen name="Location" component={Location} />
+        <Stack.Screen name="Education" component={Education} />
+        <Stack.Screen name="Order" component={Order} />
+        <Stack.Screen name="Contact" component={Contact} />
         {/* <Stack.Screen name="Business" component={Business} />
         <Stack.Screen name="Entertainment" component={Entertainment} />
         <Stack.Screen name="Health" component={Health} />

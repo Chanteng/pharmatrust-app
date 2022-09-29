@@ -39,7 +39,7 @@ const GetStarted = ({ navigation }) => {
         </View>
         <View style={{ flex: 0.3, alignItems: "center" }}>
           <Text style={{ color: "#2c187b", fontSize: 24, fontWeight: "bold" }}>
-            PHARMATRUST PHARMACY &{" "}
+            PHARMATRUST PHARMACY &
           </Text>
           <Text style={{ color: "#2c187b", fontSize: 24, fontWeight: "bold" }}>
             PROFESSIONAL COLLEGE
